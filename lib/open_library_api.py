@@ -43,6 +43,7 @@ class Search:
         response = requests.get(URL).json()
         response_formatted = f"Title: {response['docs'][0]['title']}\nAuthor: {response['docs'][0]['author_name'][0]}"
         return response_formatted
+    
 
 
 # results = Search().get_search_results()
